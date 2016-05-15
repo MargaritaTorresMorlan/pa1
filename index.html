@@ -11,35 +11,39 @@
 <!--grupo JavaScript-->
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
-<script src="phonegap.js"</script>
-</script>
+<script src="phonegap.js"></script>
 </head>
 <body>
 <div data-role="page" id="principal" data-theme="a">
- <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <div data-role="header">
   <h1>Aplicaciones de Acciones </h1>
   </div>
   <div>
       <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
       <li class="ui-first-child ui-last-child">
-  <a href="app4.html" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <a href="javascript:abrir('app4.html')" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
   <h2>Aplicacion 4</h2>
   <p>Se muestra la aplicacion 4</p>
   </a>
   </li>
   <li class="ui-first-child ui-last-child">
- <a href="app6.html" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+ <a href="javascript:abrir('app6.html')" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
   <h2>Aplicacion 6</h2>
   <p>Se muestra la aplicacion 6</p>
   </a>
   </li>
   <li class="ui-first-child ui-last-child">
-  <a href="app8.html" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <a href="javascript:abrir('app8.html')" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
   <h2>Aplicacion 8 </h2>
   <p>Muestra la aplicacion 8</p>
   </a>
   </li>
   </ul>
+  <script>
+  function abrir(url){
+	  open(url,'top=300,left=300,width=300,height=300');
+  }
+  </script>
 </div>
 <div data-role="footer" align="center" data-theme="a">
   <div>

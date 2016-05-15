@@ -13,13 +13,16 @@
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
 <script src="js/acciones4.js" type="text/javascript"></script>
-
-<script src="phonegap.js"</script>
-</script>
 </head>
 <body>
+<script>
+  function abrir(url){
+	  open(url,'top=300,left=300,width=300,height=300');
+  }
+  </script>
 <div data-role="page" id="Principal" data-theme="c">
-<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<a href="javascript:abrir('index.html')" class="ui-btn ui-btn-icon-left ui-icon-carat-l">Regresar</a>
 <h1>DATOS DEL DISPOSITIVO</h1>
 </div>
 
